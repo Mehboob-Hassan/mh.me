@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&family=Inter:wght@400&family=Poppins:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #fefafa;
+  --foreground: #171717;
+  --font-sen: "Sen", serif;
+  --font-logo: "Georgia", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.header {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.header-logo {
+  font-family: var(--font-logo);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.header div ul li {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-8 py-4 text-sm uppercase tracking-widest transition-all hover:bg-[#d7271e];
+}
+
+.social-links p span {
+  @apply hover:text-[#ec5c54] cursor-pointer;
+}
+
+.header-links li {
+  @apply hover:text-[#ec5c54] cursor-pointer uppercase;
+}
+
+/* .generalButtonLg {
+  background-color: #d7271e;
+  background-color: #ec5c54;
+  color: #232536;
+  padding: .5vw 2vw;
+  font-size: 1.2vw;
+  color: #fff;
+  border-radius: 4px;
+  width: 12vw;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+} */
+
+body {
+  color: var(--foreground);
+  /* background: var(--background); */
+  font-family: "Poppins", sans-serif;
+}
+
+
+h1 {
+  letter-spacing: -2px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h3 {
+  color: #232536;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  color: rgb(133, 131, 131)
+}
+
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+
+
+.hero-content-right {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #232536;
+  padding: 0 2vw;
+}
