@@ -20,18 +20,18 @@ function HomePage() {
                 </p>
 
                 {/* Call to Action Button */}
-                <a href="#contact">
+                <a href="/contact-us">
                     <button className="btn-primary">
-                        Let’s Connect
+                        Lets Connect
                     </button>
                 </a>
 
                 {/* Social Icons */}
                 <div className="flex gap-5 mt-10 text-gray-600">
-                    <a href="https://github.com" target="_blank" className="hover:text-primary transition">
+                    <a href="https://github.com/Mehboob-Hassan" target="_blank" className="hover:text-primary transition">
                         <i className="fab fa-github fa-lg" />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" className="hover:text-primary transition">
+                    <a href="https://www.linkedin.com/in/mehboob-hassan-01806a263/" target="_blank" className="hover:text-primary transition">
                         <i className="fab fa-linkedin fa-lg" />
                     </a>
                     <a href="https://instagram.com" target="_blank" className="hover:text-primary transition">

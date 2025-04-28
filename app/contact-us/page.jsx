@@ -1,6 +1,24 @@
+'use client'
+import { useRef } from "react";
 import Header from "../components/Header";
+import emailjs from 'emailjs-com';
 
 const Page = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_s9n5tx4', 'template_0591wnt', form.current, 'Z3nzVa0hiJanLVYGe')
+            .then((result) => {
+                console.log(result.text);
+                alert("Message Sent Successfully!");
+                form.current.reset(); 
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
     return (
         <>
             <Header />
@@ -33,7 +51,7 @@ const Page = () => {
                     </div>
 
                     <div className="w-[100%] mt-7 mb-16">
-                        <form className="space-y-4 [w-100%]">
+                        <form ref={form} onSubmit={sendEmail} className="space-y-4 [w-100%]">
                             <input
                                 type="text"
                                 placeholder="Full Name"
@@ -57,8 +75,8 @@ const Page = () => {
                                 placeholder="Message"
                                 className="w-full p-3 border border-gray-300 placeholder-gray-500"
                             ></textarea>
-
-                            <button className="btn-primary">
+ 
+                            <button type="submit" className="btn-primary">
                                 Send Message
                             </button>
 
