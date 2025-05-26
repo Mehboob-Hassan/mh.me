@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function HomePage() {
     return (
-        <section className="min-h-screen flex flex-col-reverse lg:flex-row items-end justify-center px-6 pt-16 lg:pt-0 lg:px-24 bg-white">
+        <section className="h-screen flex flex-col-reverse lg:flex-row items-center justify-center pt-24 px-6 lg:px-24 bg-white">
             {/* Left Side - Text + Social Icons */}
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
                 {/* Intro Text */}
@@ -20,7 +20,7 @@ function HomePage() {
                 </p>
 
                 {/* Call to Action Button */}
-                <a href="/contact-us">
+                <a href="/contact-me">
                     <button className="btn-primary">
                         Lets Connect
                     </button>

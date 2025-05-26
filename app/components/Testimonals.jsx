@@ -3,9 +3,9 @@ import React from 'react'
 function Testimonals() {
     const testimonials = [
         {
-            name: "Ali Raza",
-            quote: "Working with you was a breeze! The website turned out better than I imagined — fast, responsive, and clean.",
-            image: "/assets/guy-hawkins.png"
+            name: "Sohail Shafique",
+            quote: "Working with Mr. Mehboob was a great experience. He is highly professional, and consistently delivers quality work on time. I’d definitely recommend him for any web development project.",
+            image: "/assets/testimonials/Sohail-Shafique.jpg"
         },
         {
             name: "Sarah Khan",
@@ -20,7 +20,7 @@ function Testimonals() {
     ];
 
     return (
-        <section id="testimonials" className="min-h-screen flex flex-col items-center justify-start lg:pt-[8vh] px-4">
+        <section id="testimonials" className="pt-16 pb-10 lg:pb-0 min-h-screen flex flex-col items-center justify-start lg:pt-[8vh] px-4 bg-white">
             {/* Heading */}
             <div className="w-full flex justify-center mb-12">
                 <div className="text-center w-full sm:w-[90%] lg:w-1/2">
@@ -40,13 +40,13 @@ function Testimonals() {
                     {testimonials.map((t, idx) => (
                         <div
                             key={idx}
-                            className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
+                            className="cursor-pointer bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
                         >
                             <div className="text-primary text-4xl mb-2">❝</div>
                             <img
                                 src={t.image}
                                 alt={`Photo of ${t.name}`}
-                                className="w-16 h-16 rounded-full border-2 border-primary mb-4 object-cover"
+                                className="w-[80px] h-[80px] rounded-full border-2 border-primary mb-4 "
                                 loading="lazy"
                             />
                             <p className="text-gray-700 text-sm mb-6">

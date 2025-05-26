@@ -4,45 +4,33 @@ import React from 'react'
 function MyWork() {
     const projects = [
         {
-            title: "Retro Camera.",
-            category: "Website",
-            image: "/assets/laptop.jpg",
+            title: "FurEver – Responsive Landing Page",
+            category: "Frontend - React JS",
+            image: "/assets/project/furever.png",
             link: "#"
         },
         {
-            title: "The White Lamp.",
-            category: "Product Design",
-            image: "/assets/laptop.jpg",
+            title: "Scalable Ecommerce Backend",
+            category: "Backend - Node JS",
+            image: "/assets/project/ecom.png",
             link: "#"
         },
         {
-            title: "Rucksack.",
-            category: "Branding",
-            image: "/assets/laptop.jpg",
+            title: "Student-run Blog Platform",
+            category: "Frontend - Next JS",
+            image: "/assets/project/blog.png",
             link: "#"
         },
         {
-            title: "Since Day One.",
-            category: "Website",
-            image: "/assets/laptop.jpg",
-            link: "#"
-        },
-        {
-            title: "Sand Dunes.",
-            category: "Illustration",
-            image: "/assets/laptop.jpg",
-            link: "#"
-        },
-        {
-            title: "Minimalismo.",
-            category: "Branding",
-            image: "/assets/laptop.jpg",
+            title: "Food Ordering Platform",
+            category: "Frontend - Next JS",
+            image: "/assets/project/tclb.png",
             link: "#"
         }
     ];
 
     return (
-        <section id='my-work' className=' lg:min-h-screen flex-center flex-col '>
+        <section id='my-work' className='pt-16 lg:pt-0 lg:min-h-screen flex-center flex-col '>
             <div className='lg:min-h-[10vw] w-[100%] flex justify-center'>
                 <div className='flex justify-around items-center flex-col w-[90%] lg:w-1/3 min-h-[10vw] text-center'>
                     <h3>What I’ve Built So Far</h3>
@@ -75,7 +63,12 @@ function MyWork() {
                         </a>
                     ))}
                 </div>
+            </div>
 
+            <div className='my-10'>
+                <a href='https://github.com/Mehboob-Hassan?tab=repositories' target='_blank' rel='noopener noreferrer'>
+                    <button className='btn-transparent'>See More Projects</button>
+                </a>
             </div>
         </section>
 

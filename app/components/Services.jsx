@@ -27,7 +27,7 @@ function Services() {
 
 
     return (
-        <section className="min-h-screen px-4 py-16">
+        <section className="min-h-screen px-4 py-16 bg-white">
             {/* Section Header */}
             <div className="lg:min-h-[10vw] w-[100%] flex justify-center">
 
@@ -49,7 +49,7 @@ function Services() {
                     {services.map((service, idx) => (
                         <Card
                             key={idx}
-                            className="bg-white shadow-md hover:shadow-xl transition-shadow duration-300 w-4/5 sm:w-[280px] md:w-[300px] rounded-lg"
+                            className="cursor-pointer bg-white shadow-md hover:shadow-xl transition-shadow duration-300 w-4/5 sm:w-[280px] md:w-[300px] rounded-lg"
                         >
                             <CardContent className="flex flex-col items-center justify-between lg:gap-4 p-6 min-h-[200px] lg:min-h-[300px]">
                                 {service.icon}

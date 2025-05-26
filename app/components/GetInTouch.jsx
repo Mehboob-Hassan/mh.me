@@ -2,7 +2,7 @@ import React from 'react'
 
 function GetInTouch() {
     return (
-        <section className="min-h-screen flex flex-col items-center justify-start py-[5vh] lg:py-[0vh] px-4">
+        <section className="min-h-[70vh] flex flex-col items-center justify-start py-[5vh] lg:py-[4vh] px-4">
             {/* Heading */}
             <div className="w-full flex justify-center mb:6 lg:mb-12">
                 <div className="text-center w-full sm:w-[90%] lg:w-1/3 py-4">
@@ -20,27 +20,27 @@ function GetInTouch() {
                     {/* Contact Info */}
                     <div>
                         <h4 className="text-xs tracking-widest mb-2 text-gray-500">REACH ME AT</h4>
-                        <p className="mb-1">mehassan804@gmail.com</p>
-                        <p>+92 345 0356304</p>
+                        <p className="cursor-pointer mb-1">mehassan804@gmail.com</p>
+                        <p className='cursor-pointer'>+92 345 0356304</p>
                     </div>
 
                     {/* Social Links */}
                     <div>
                         <h4 className="text-xs tracking-widest mb-2 text-gray-500">SOCIAL</h4>
                         <p className="space-x-2">
-                            <span>Behance</span>
-                            <span>· Dribble</span>
-                            <span>· Twitter</span>
+                            <span className='cursor-pointer'>Behance</span>
+                            <span className='cursor-pointer'>· Dribble</span>
+                            <span className='cursor-pointer'>· Twitter</span>
                         </p>
                         <p className="space-x-2">
-                            <span>Instagram</span>
-                            <span>· Github</span>
+                            <span className='cursor-pointer'>Instagram</span>
+                            <span className='cursor-pointer'>· Github</span>
                         </p>
                     </div>
 
                     {/* CTA Button */}
                     <div>
-                        <a href="/contact-us">
+                        <a href="/contact-me">
                             <button className="btn-primary">Say Hello.</button>
                         </a>
                     </div>
@@ -52,7 +52,7 @@ function GetInTouch() {
                 <div className="w-full max-w-[80vw] h-[2px] bg-primary mx-auto mb-6" />
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
                     <p>© Copyright MH 2025</p>
-                    <div className="w-[2px] h-[20px] bg-gray-400" />
+                    <div className="hidden lg:block  w-[2px] h-[20px] bg-gray-400" />
                     <p>Developed by MH with ❤</p>
                 </div>
             </div>

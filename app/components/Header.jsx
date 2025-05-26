@@ -56,22 +56,24 @@ function Header() {
 
                 {/* Logo */}
                 <div className="flex items-center">
-                    <Image
-                        src="/assets/mh-logo-02.png"
-                        alt="MH Logo"
-                        width={100}
-                        height={100}
-                        className="w-[52px] h-auto rounded-lg"
-                    />
+                    <a href='/' className='cursor-pointer'>
+                        <Image
+                            src="/assets/mh-logo-02.png"
+                            alt="MH Logo"
+                            width={100}
+                            height={100}
+                            className="w-[52px] h-auto rounded-lg"
+                        />
+                    </a>
                 </div>
 
                 {/* Desktop Nav */}
                 <nav className="hidden lg:flex space-x-10 items-center font-medium">
-                    <a href="/" className="hover:text-primary transition">Home</a>
-                    <a href="/#about-us" className="hover:text-primary transition">About</a>
-                    <a href="/#my-work" className="hover:text-primary transition">Work</a>
-                    <a href="/#testimonials" className="hover:text-primary transition">Testimonials</a>
-                    <a href="/contact-us">
+                    <a href="/" className="nav-link hover:text-primary transition">Home</a>
+                    <a href="/#about-us" className="nav-link hover:text-primary transition">About</a>
+                    <a href="/#my-work" className="nav-link hover:text-primary transition">Work</a>
+                    <a href="/#testimonials" className="nav-link hover:text-primary transition">Testimonials</a>
+                    <a href="/contact-me">
                         <button className="btn-primary px-4 py-2">Hire Me</button>
                     </a>
                 </nav>
@@ -94,7 +96,7 @@ function Header() {
                         <li><a href="/#my-work" onClick={toggleMenu} className="block hover:text-primary">Work</a></li>
                         <li><a href="/#testimonials" onClick={toggleMenu} className="block hover:text-primary">Testimonials</a></li>
                         <li>
-                            <a href="/contact-us" onClick={toggleMenu}>
+                            <a href="/contact-me" onClick={toggleMenu}>
                                 <button className="btn-primary w-full py-2">Hire Me</button>
                             </a>
                         </li>

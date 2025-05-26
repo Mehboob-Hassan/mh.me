@@ -10,6 +10,10 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], var
 export const metadata = {
   title: "MH | Web Engineer",
   description: "Mehboob Hassan, A Web Engineer Personal Site",
+  icons: {
+    icon: "/assets/mh-logo-02.png",
+    shortcut: "/assets/mh-logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
