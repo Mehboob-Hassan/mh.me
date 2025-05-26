@@ -12,8 +12,8 @@ export const metadata = {
   description: "Mehboob Hassan, A Web Engineer Personal Site",
   icons: {
     icon: "/favicon.ico",
-    apple: "/assets/mh-logo-02.png",
-    shortcut: "/assets/mh-logo-02.png",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
 };
 
