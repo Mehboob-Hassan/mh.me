@@ -31,7 +31,7 @@ function MyWork() {
 
     return (
         <section id='my-work' className='pt-16 lg:pt-0 lg:min-h-screen flex-center flex-col '>
-            <div className='lg:min-h-[10vw] w-[100%] flex justify-center'>
+            <div className='lg:min-h-[10vw] w-[100%] flex justify-center mt-10'>
                 <div className='flex justify-around items-center flex-col w-[90%] lg:w-1/3 min-h-[10vw] text-center'>
                     <h3>What I’ve Built So Far</h3>
                     <p>A showcase of selected projects that reflect my skills in frontend, backend, and performance optimization.</p>
